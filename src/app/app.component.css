@@ -1,0 +1,87 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 24vw;
+    margin:10vh 38vw 4vh 38vw;
+    background-color:rgb(110, 109, 131);
+    padding:0vh 0vw 1vh 0vw;
+  }
+  
+.card:hover {
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
+}
+  
+.container-1{
+    padding: 0.5vh 2vw 0.4vh 2vw;
+}
+.container-2 {
+    padding: 1.5vh 2vw 1.5vh 2vw;
+}
+#header{
+    color:#fff;
+    font-size:20px;
+    text-decoration: bold;
+}
+hr{
+    margin-top:-3px;
+    color:black;
+    background-color: rgb(75, 75, 75); height: 1px; border: 0;
+}
+
+#inputField{
+    margin-top:1.5vh;
+    width:18vw;
+    height:4vh;
+    font-size:20px;
+    padding:1vh 1vw 1vh 1vw;
+}
+
+#submitButton{
+    margin-top:2.5vh;
+    color:#fff;
+    background-color: rgb(5, 184, 14);
+    margin-bottom:2vh;
+    padding:1.5vh 1vw 1.5vh 1vw;
+    font-size:18px;
+}
+#submitButton[disabled]{
+    background-color: rgb(8, 111, 245);
+}
+
+#submitButton, #inputField,#message, .card{
+    border:none;
+    border-radius: 5px;
+
+}
+#message{
+    background-color:rgb(194, 253, 194);
+    color:rgb(0, 110, 0);
+    width: 21vw;
+    font-size:20px;
+    margin:2vh 38vw 2vh 38vw;
+    padding:3vh 2vw 3vh 1vw;
+}
+#table-container{
+    padding:5vh 30vw 0 30vw;
+}
+
+#table-header{
+    background-color:rgb(114, 8, 146);
+    color:white;
+    font-size:15px;
+    height:6vh;
+    text-align: center;
+}
+td,tr,table,thead,tbody{
+    border:none;
+}
+td{
+    width:20vw;
+    padding:1vh 1vw 1vh 3vw;
+}
+tr:nth-child(even){
+    background-color:rgb(226, 226, 226);
+}
+tr:nth-child(odd){
+    background-color:rgb(190, 190, 190);
+}

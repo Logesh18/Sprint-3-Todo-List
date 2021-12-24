@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{title}}</title>
+</head>
+<body>
+  <div class="card">
+    <div class="container-1" id="header">
+      <p>Add ToDo List</p>  
+    </div>
+    <hr>
+    <div class="container-2">
+      <input type="text" id="inputField" (click)="hide()" [(ngModel)]="task" #todoData />
+      <br>
+      <div *ngIf="todoData.value.length === 0 ; else elseBlock">
+        <button id="submitButton" [disabled]="true" (click)="addTodo()">Add List</button>
+      </div>
+      <ng-template #elseBlock>
+        <button id="submitButton" [disabled]="false" (click)="addTodo()">Add List</button>
+      </ng-template>
+      
+    </div>
+  </div>
+
+    
+ 
+    
+  <div id="table-container">
+        <table *ngIf="show">
+          <thead id="table-header">
+              <td>Task No.</td>
+              <td>Task</td>
+          </thead>
+          <tbody>
+
+            <tr *ngFor="let todo of todos" id={{todo.id}} (click)="remove(todo)">
+              <td>{{todo.id}}</td>
+              <td>{{todo.task}}</td>
+            </tr>
+          </tbody> 
+        </table>
+  </div> 
+</body>
+</html>
